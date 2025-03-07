@@ -1,0 +1,5 @@
+dpdk-for-jetson (22.11.6-1) UNRELEASED; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Ryan Volz <rvolz@mit.edu>  Fri, 07 Mar 2025 16:47:40 -0500

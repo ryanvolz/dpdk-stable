@@ -1,0 +1,26 @@
+Source: dpdk-for-jetson
+Section: admin
+Priority: optional
+Maintainer: Ryan Volz <rvolz@mit.edu>
+Build-Depends: chrpath,
+               debhelper-compat (= 13),
+               libbpf-dev,
+               libelf-dev,
+               libibverbs-dev,
+               libpcap0.8-dev,
+               libssl-dev,
+               meson,
+               nvidia-l4t-jetson-multimedia-api,
+               pkgconf,
+               python3:any,
+               python3-pyelftools,
+               zlib1g,
+Standards-Version: 4.6.0
+Homepage: https://github.com/ryanvolz/dpdk-stable
+Rules-Requires-Root: no
+
+Package: dpdk-for-jetson
+Architecture: arm64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: DPDK stable branch with modifications
+ DPDK stable branch with modifications built for Jetson Orin
