@@ -639,6 +639,17 @@ soc_thunderxt83 = {
     'part_number': '0xa3'
 }
 
+soc_jetsonorin = {
+    'description': 'NVIDIA Jetson Orin',
+    'implementer': '0x41',
+    'flags': [
+        ['RTE_MAX_LCORE', 32],
+        ['RTE_MAX_NUMA_NODES', 1]
+    ],
+    'part_number': '0xd42',
+    'numa': false
+}
+
 soc_bluefield3 = {
   'description': 'NVIDIA BlueField-3',
   'implementer': '0x41',
@@ -682,6 +693,7 @@ graviton2:       AWS Graviton2
 graviton3:       AWS Graviton3
 graviton4:       AWS Graviton4
 hip10:           HiSilicon HIP10
+jetsonorin:      NVIDIA Jetson Orin
 kunpeng920:      HiSilicon Kunpeng 920
 kunpeng930:      HiSilicon Kunpeng 930
 n1sdp:           Arm Neoverse N1SDP
@@ -722,6 +734,7 @@ socs = {
     'hip10': soc_hip10,
     'kunpeng920': soc_kunpeng920,
     'kunpeng930': soc_kunpeng930,
+    'jetsonorin': soc_jetsonorin,
     'n1sdp': soc_n1sdp,
     'n2': soc_n2,
     'n3': soc_n3,
