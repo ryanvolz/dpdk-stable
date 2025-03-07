@@ -87,6 +87,13 @@ part_number_config_arm = {
             ['RTE_MAX_NUMA_NODES', 1]
         ]
     },
+    '0xd42': {
+        'compiler_options': ['-mcpu=cortex-a78ae'],
+        'flags': [
+            ['RTE_MAX_LCORE', 32],
+            ['RTE_MAX_NUMA_NODES', 1]
+        ]
+    },
     '0xd49': {
         'march': 'armv8.5-a',
         'march_features': ['sve2'],
@@ -444,6 +451,17 @@ soc_thunderxt83 = {
     'part_number': '0xa3'
 }
 
+soc_jetsonorin = {
+    'description': 'NVIDIA Jetson Orin',
+    'implementer': '0x41',
+    'flags': [
+        ['RTE_MAX_LCORE', 32],
+        ['RTE_MAX_NUMA_NODES', 1]
+    ],
+    'part_number': '0xd42',
+    'numa': false
+}
+
 '''
 Start of SoCs list
 generic:         Generic un-optimized build for armv8 aarch64 execution mode.
@@ -459,6 +477,7 @@ ft2000plus:      Phytium FT-2000+
 tys2500:         Phytium TengYun S2500
 graviton2:       AWS Graviton2
 graviton3:       AWS Graviton3
+jetsonorin:      NVIDIA Jetson Orin
 kunpeng920:      HiSilicon Kunpeng 920
 kunpeng930:      HiSilicon Kunpeng 930
 n1sdp:           Arm Neoverse N1SDP
@@ -487,6 +506,7 @@ socs = {
     'graviton3': soc_graviton3,
     'kunpeng920': soc_kunpeng920,
     'kunpeng930': soc_kunpeng930,
+    'jetsonorin': soc_jetsonorin,
     'n1sdp': soc_n1sdp,
     'n2': soc_n2,
     'stingray': soc_stingray,
