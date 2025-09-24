@@ -25,4 +25,4 @@
 #	-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH)
 override_dh_auto_configure:
 	dh_auto_configure -- \
-	-Dc_args=-I/usr/local/cuda/include -Dplatform=jetsonorin -Dexamples=ethtool -Ddisable_drivers=baseband/*,bus/ifpga/*,common/cpt,common/dpaax,common/iavf,common/octeontx,common/octeontx2,crypto/nitrox,net/ark,net/atlantic,net/avp,net/axgbe,net/bnx2x,net/bnxt,net/cxgbe,net/e1000,net/ena,net/enic,net/fm10k,net/hinic,net/hns3,net/i40e,vdpa/ifc,net/igc,net/liquidio,net/netvsc,net/nfp,net/qede,net/sfc,net/thunderx,net/vdev_netvsc,net/vmxnet3,regex/octeontx2,net/mlx4,*/mlx5
+	-Dc_args=-I/usr/local/cuda/include -Dplatform=jetsonorin -Dexamples=ethtool -Ddisable_drivers=baseband/*,bus/ifpga/*,common/cnxk,common/cpt,common/dpaax,common/iavf,common/octeontx,common/octeontx2,crypto/nitrox,event/cnxk,net/ark,net/atlantic,net/avp,net/axgbe,net/bnx2x,net/bnxt,net/cnxk,net/cxgbe,net/e1000,net/ena,net/enic,net/fm10k,net/hinic,net/hns3,net/i40e,vdpa/ifc,net/igc,net/liquidio,net/netvsc,net/nfp,net/qede,net/sfc,net/thunderx,net/vdev_netvsc,net/vmxnet3,regex/octeontx2
